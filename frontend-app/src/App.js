@@ -14,7 +14,12 @@ function App() {
                     </Typography>
                 </Toolbar>
             </AppBar>
-          
+            <Container style={{ marginTop: '20px' }}>
+                <Routes>
+                    <Route path="/" element={<ProductList />} />
+                    <Route path="/product/:id" element={<ProductDetail />} />
+                </Routes>
+            </Container>
         </Router>
     );
 }
